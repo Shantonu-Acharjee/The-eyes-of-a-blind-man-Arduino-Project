@@ -1,0 +1,195 @@
+GitHub Link :- https://github.com/shantonuacharjee1/The-eyes-of-a-blind-man-Arduino-Project/archive/refs/heads/Version1.zip
+Blog Link :- https://shantonuacharjee.blogspot.com/2021/10/3rd-eye-of-blind-person.html
+Blog Short Link :- https://tinyurl.com/yk4lak43
+
+Project :- 19  The eyes of a blind man.
+Project Code :-  https://shantonuacharjee.blogspot.com/2021/10/3rd-eye-of-blind-person.html
+
+I will do Arduino programming, Arduino projects And circuit designing.
+
+The eyes of a blind man.
+
+arduino projects with code,
+cool arduino projects
+advanced arduino projects
+arduino project for beginners
+
+Arduino project for blind person, 
+ultrasonic sensor for blind person,
+blind arduino project,
+smart glasses for blind man,
+arduino science project,
+ultrasonic glasses project,
+arduino ultrasonic projects,
+the blind eye project,
+latest arduino project,
+
+
+#Arduino_project_for_blind_person
+#ultrasonic_sensor_for_blind_person
+#blind_arduino_project
+#smart_glasses_for_blind_man
+#arduino_science_project
+#ultrasonic_glasses_project
+#arduino_ultrasonic_projects
+#theblind_eye_project
+#latest_arduino_project
+
+
+Arduino Mega/Uno/Nano
+Ultrasonic Distance Range Sensor Module(HC-SR04)
+Buzzer
+Push Button 
+LDR  
+10k Resistor   
+
+
+
+
+
+Shantonu Acharjee
+Electronics Engineering
+Copyright 2021 - Shantonu Acharjee
+https://www.fiverr.com/shantonu_bd
+
+
+
+
+<pre><code>     </code></pre>
+
+hljs.initHighlightingOnLoad();
+
+
+
+int trigPinA =8;//l
+int echoPinA =A1;
+
+int trigPinB =A2;//m 
+int echoPinB =A3;
+
+int trigPinC =A4;
+int echoPinC =A5;
+
+long durationA;//L
+int distanceA;
+
+long durationB;//M
+int distanceB;
+
+long durationC;//R
+int distanceC;
+
+
+int buzzer = 13;
+int LDR = A0;
+int LDRState=0;
+
+
+void setup() 
+{
+ pinMode(trigPinA,OUTPUT);//L
+ pinMode(echoPinA,INPUT);
+
+ pinMode(trigPinB,OUTPUT);//M
+ pinMode(echoPinB,INPUT);
+
+ pinMode(trigPinC,OUTPUT);//R
+ pinMode(echoPinC,INPUT);
+ pinMode(LDR,INPUT);
+ Serial.begin(9600);
+  
+}
+
+
+
+void loop() {
+//L
+digitalWrite(trigPinA,LOW);
+delayMicroseconds(2);
+digitalWrite(trigPinA,HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPinA,LOW);
+durationA=pulseIn(echoPinA,HIGH);
+distanceA = durationA*0.034/2;
+//(distanceA >= 50)?digitalWrite(buzzer,HIGH):digitalWrite(buzzer,LOW);
+//L
+
+//M
+digitalWrite(trigPinB,LOW);
+delayMicroseconds(2);
+digitalWrite(trigPinB,HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPinB,LOW);
+durationB=pulseIn(echoPinB,HIGH);
+distanceB = durationB*0.034/2;
+//(distanceB >= 50)?digitalWrite(buzzer,HIGH):digitalWrite(buzzer,LOW);
+//M
+
+//R
+digitalWrite(trigPinC,LOW);
+delayMicroseconds(2);
+digitalWrite(trigPinC,HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPinC,LOW);
+durationC=pulseIn(echoPinC,HIGH);
+distanceC = durationC*0.034/2;
+
+//R
+
+(distanceA >= 50 || distanceB >= 50 || distanceC >= 50)?digitalWrite(buzzer,HIGH):digitalWrite(buzzer,LOW);
+
+//LDR
+LDRState=analogRead(LDR);
+if(LDRState >= 50){
+digitalWrite(buzzer,HIGH);
+delay(20);
+digitalWrite(buzzer,LOW);
+delay(20);
+}
+else{
+digitalWrite(buzzer,LOW);
+//LDR
+
+Serial.println(distanceA);
+}
+}
+
+This is my 19th project based on Arduino.
+The name of the project is 'The eyes of a blind man'.
+This project is designed for people who can't see with their eyes.
+Using the 'The eyes of a blind man' Project they understand if there is any obstacle within the specified distance.
+Moreover, blind people can now understand day or night using the 'The eyes of a blind man' Project.
+'The eyes of a blind man' project can be the ideal choice for any college university or science fair project.
+
+
+List of sensors that will be needed to project :-
+
+Arduino Mega/Uno/Nano
+Ultrasonic Distance Range Sensor Module(HC-SR04)
+Buzzer
+Push Button 
+LDR  
+10k Resistor   
+Wire
+Hardboard
+
+
+Why to choose me:
+
+Will Debug/ Write code for your project until it works. Otherwise will not take payment.
+Will write much more extensive comments for your better understanding.
+Remote help with hardware.
+Provide consultation with project idea.
+
+
+
+
+
+
+
+https://drive.google.com/file/d/10A01rK7fWkOtXoC9b7m4YHaz0Os7-00n/view?usp=sharing
+
+https://drive.google.com/uc?export=download&id=10A01rK7fWkOtXoC9b7m4YHaz0Os7-00n
+
+
+
